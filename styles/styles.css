@@ -1,0 +1,10 @@
+.three-js-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.threejso-image {
+    opacity: 0;
+}
