@@ -3,6 +3,8 @@ import { EffectComposer } from 'https://cdn.skypack.dev/three@0.129.0/examples/j
 import { RenderPass } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/postprocessing/RenderPass.js';
 import { ShaderPass } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/postprocessing/ShaderPass.js';
 
+import { vertexShader, fragmentShaderHover, fragmentShaderScroll } from './three-js-overlay-shaders.js';
+
 (async function() {
     const pageImages = Array.from(document.querySelectorAll('.threejso-image'));
 
@@ -121,7 +123,7 @@ import { ShaderPass } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/p
         };
         let material = new THREE.ShaderMaterial({
             vertexShader,
-            fragmentShader: fragmentShaderOwn,
+            fragmentShader: fragmentShaderHover,
             uniforms
         });
 
