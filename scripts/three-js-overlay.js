@@ -93,7 +93,7 @@ import { vertexShader, fragmentShaderHover, fragmentShaderScroll } from './three
         } else {
             inertiaShaderPass.uniforms.effectVelocity.value -= 0.3 * deltaTime;
         }
-        inertiaShaderPass.uniforms.effectVelocity.value = Math.max(0, Math.min(1, inertiaShaderPass.uniforms.effectVelocity.value));
+        inertiaShaderPass.uniforms.effectVelocity.value = Math.max(0, Math.min(2, inertiaShaderPass.uniforms.effectVelocity.value));
 
         //renderer.render(scene, camera);
         composer.render(deltaTime)
