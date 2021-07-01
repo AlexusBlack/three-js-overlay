@@ -6,7 +6,7 @@ Version: 1.1
 Author: Alex Chernov
 Author URI: https://alexchernov.com
 */
-define('THREE_JS_OVERLAY_VERSION', '1.0');
+define('THREE_JS_OVERLAY_VERSION', '1.1');
  
 function three_js_overlay_scripts_and_styles() {
     wp_enqueue_style('three-js-overlay-style', plugin_dir_url(__FILE__) . 'styles/three-js-overlay.css', array(), THREE_JS_OVERLAY_VERSION);
