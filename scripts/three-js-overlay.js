@@ -66,7 +66,7 @@ import { vertexShader, fragmentShaderHover, fragmentShaderScroll } from './three
     let justScrolled = false;
     let justScrolledTimeout = null;
     document.addEventListener('scroll', function() {
-        camera.position.set(windowWidth/2, -windowHeight/2 - window.scrollY, 10);
+        // camera.position.set(windowWidth/2, -windowHeight/2 - window.scrollY, 10);
 
         justScrolled = true;
         clearTimeout(justScrolledTimeout);
@@ -75,6 +75,8 @@ import { vertexShader, fragmentShaderHover, fragmentShaderScroll } from './three
 
     let then = 0;
     function update(now) {
+        camera.position.set(windowWidth/2, -windowHeight/2 - window.scrollY, 10);
+
         now *= 0.001;  // convert to seconds
         const deltaTime = now - then;
         then = now;
