@@ -1,6 +1,6 @@
-# Three-js-overlay
+# WebGL Overlay
 
-Three.js overlay layer to apply WebGL Shader effects and other 3D effects on a web page. 
+WebGL overlay layer to apply WebGL Shader effects and other 3D effects on a web page. 
 
 Can work as WordPress plugin.
 
